@@ -47,7 +47,7 @@ class InsertSvgDialog extends FormBase implements BaseFormIdInterface {
    */
   public static function create(ContainerInterface $container) {
     return new static(
-      $container->get('entity.manager')->getStorage('file')
+      $container->get('entity_type.manager')->getStorage('file')
     );
   }
 
